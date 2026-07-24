@@ -1,0 +1,32 @@
+/* ============================================================
+   HERO · portada de inicio
+   ============================================================ */
+
+.hero {
+  min-height: 100vh; display: flex; flex-direction: column; justify-content: center;
+  padding: 9rem var(--pad) 5rem; position: relative;
+  background: radial-gradient(ellipse at 72% 38%, var(--hero-glow), transparent 60%), var(--bg);
+}
+.hero__inner { max-width: var(--maxw); margin: 0 auto; width: 100%; }
+.hero__eyebrow { margin-bottom: 2rem; }
+.hero__name {
+  font-family: var(--font-serif); font-weight: 500; line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+.hero__name-line { display: block; font-size: clamp(3rem, 11vw, 8.5rem); }
+.hero__name-accent {
+  display: block; font-style: italic; font-weight: 500;
+  font-size: clamp(3rem, 11vw, 8.5rem); color: var(--accent); margin-top: 0.04em;
+}
+.hero__tagline {
+  font-family: var(--font-serif); font-style: italic;
+  font-size: clamp(1.15rem, 2.5vw, 1.7rem); color: var(--text-dim);
+  max-width: 36ch; margin-top: 2rem; line-height: 1.4;
+}
+.hero__meta {
+  display: flex; align-items: center; gap: 0.9rem; margin-top: 1.9rem;
+  color: var(--text-faint); font-size: 0.74rem; letter-spacing: 0.14em; text-transform: uppercase;
+  flex-wrap: wrap;
+}
+.hero__meta-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--accent); }
+.hero__actions { display: flex; gap: 1rem; margin-top: 2.8rem; flex-wrap: wrap; }

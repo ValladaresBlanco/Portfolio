@@ -1,0 +1,63 @@
+/* ============================================================
+   PROYECTOS · filtros, tarjetas, chips de tecnología
+   ============================================================ */
+
+.project-filters {
+  max-width: var(--maxw); margin: 0 auto 3rem; padding: 0 var(--pad);
+  display: flex; gap: 0.6rem; flex-wrap: wrap;
+}
+.project-filter {
+  background: none; border: 1px solid var(--line); border-radius: 999px;
+  color: var(--text-dim); padding: 0.55rem 1.25rem;
+  font-size: 0.74rem; letter-spacing: 0.12em; text-transform: uppercase;
+  cursor: pointer; transition: all 0.3s var(--ease);
+}
+.project-filter:hover { border-color: var(--accent); color: var(--text); }
+.project-filter.is-active { background: var(--text); color: var(--bg); border-color: var(--text); }
+
+.projects__grid {
+  max-width: var(--maxw); margin: 0 auto; padding: 0 var(--pad);
+  display: flex; flex-direction: column;
+}
+.project {
+  display: grid; grid-template-columns: 0.95fr 1.05fr; gap: clamp(1.5rem, 4vw, 4rem);
+  align-items: center; padding: clamp(2rem, 4vw, 3.2rem) 0;
+  border-top: 1px solid var(--line);
+}
+.project:last-of-type { border-bottom: 1px solid var(--line); }
+.project__media { padding: 0 clamp(0.5rem, 2vw, 1.5rem); }
+.project__media .photo-frame { aspect-ratio: 16 / 10; }
+.project__body { padding: 0 clamp(0.5rem, 2vw, 1.5rem); }
+.project__category { display: block; font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.7rem; }
+.project__title { font-family: var(--font-serif); font-weight: 500; font-size: clamp(1.6rem, 3vw, 2.3rem); line-height: 1.05; letter-spacing: -0.01em; margin-bottom: 0.9rem; }
+.project__desc { color: var(--text-dim); margin-bottom: 1.4rem; max-width: 46ch; }
+.project__more {
+  display: inline-flex; align-items: center; gap: 0.7rem; margin-top: 1.6rem;
+  padding: 0.62rem 1.2rem; border: 1px solid var(--line); border-radius: 999px;
+  background: none; cursor: pointer;
+  color: var(--text-dim); font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase;
+  transition: background-color 0.35s var(--ease), border-color 0.35s var(--ease), color 0.35s var(--ease);
+}
+.project__more-arrow { transition: transform 0.35s var(--ease); }
+.project__more:hover {
+  border-color: var(--accent); color: var(--text); background: var(--accent-soft);
+}
+.project__more:hover .project__more-arrow { transform: translateX(5px); }
+.project__more:focus-visible { outline: 1px solid var(--accent); outline-offset: 3px; }
+.projects__empty { max-width: var(--maxw); margin: 2rem auto 0; padding: 0 var(--pad); color: var(--text-dim); font-style: italic; }
+
+/* ---------- Chips de tecnología (dorado adaptable a cada tema) ---------- */
+.tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.tags li {
+  font-size: 0.72rem; letter-spacing: 0.04em;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border: 1px solid color-mix(in srgb, var(--accent) 32%, transparent);
+  border-radius: 999px; padding: 0.32rem 0.85rem;
+  transition: border-color 0.3s var(--ease), color 0.3s var(--ease), background-color 0.3s var(--ease);
+}
+.tags li:hover {
+  border-color: var(--accent);
+  color: var(--text);
+  background: color-mix(in srgb, var(--accent) 16%, transparent);
+}

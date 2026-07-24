@@ -1,0 +1,68 @@
+╔══════════════════════════════════════════════════════════╗
+║   PORTAFOLIO EN REACT — GUÍA RÁPIDA                        ║
+╚══════════════════════════════════════════════════════════╝
+
+Hecho con React + Vite + Framer Motion (animaciones).
+
+VER EL SITIO MIENTRAS EDITAS
+----------------------------
+  Abre una terminal en esta carpeta y ejecuta:
+      npm run dev
+  Luego entra a  http://localhost:5173
+  (Se actualiza solo cada vez que guardas un archivo.)
+
+DÓNDE EDITAR TU CONTENIDO  ← lo más importante
+----------------------------------------------
+  TODO tu texto vive en UN solo archivo:
+      src/data.js
+
+  Ahí cambias, en español e inglés:
+    - profile   → tu nombre, rol, frase, correo, redes, CV, foto
+    - about     → tus párrafos y tu lista de tecnologías
+    - projects  → tus proyectos (nombre, descripción, tags, links)
+    - timeline  → tu experiencia / educación (para el CV)
+
+  No necesitas tocar el resto del código.
+
+IMÁGENES Y CV (van en la carpeta  public/)
+------------------------------------------
+  - Foto de perfil:  guarda public/perfil.jpg
+                     y en data.js pon  photo: "/perfil.jpg"
+  - Captura de proyecto: guarda public/proyecto1.jpg
+                     y en el proyecto pon  image: "/proyecto1.jpg"
+  - Tu CV:           guarda public/CV.pdf
+                     (el botón ya apunta a "/CV.pdf")
+  Las imágenes se ven en blanco y negro y toman color al pasar
+  el mouse (parte de la estética).
+
+IDIOMA
+------
+  Botón ES / EN arriba a la derecha. Recuerda escribir las dos
+  versiones de cada texto en data.js (es y en).
+
+SUBIRLO A INTERNET (gratis)
+---------------------------
+  1) Genera la versión final:
+         npm run build
+     (crea la carpeta  dist/  con el sitio listo)
+
+  2) Publícalo — la forma más fácil:
+     - Entra a  https://app.netlify.com/drop
+     - Arrastra la carpeta  dist/
+     - Te da un link para compartir.
+
+  Otras opciones: Vercel, GitHub Pages, Cloudflare Pages.
+
+ESTRUCTURA (por si te da curiosidad)
+------------------------------------
+  src/data.js              → tu contenido (lo que editas)
+  src/App.jsx              → arma las secciones
+  src/index.css            → estética / diseño
+  src/LanguageContext.jsx  → lógica del cambio de idioma
+  src/anim.js              → animaciones reutilizables
+  src/components/          → Nav, Hero, About, Projects, Resume, Contact
+
+──────────────────────────────────────────────────────────────
+  Nota: la versión anterior en HTML sigue intacta en la carpeta
+  "Portfolio". Esta nueva en React está en "portfolio-react".
+──────────────────────────────────────────────────────────────

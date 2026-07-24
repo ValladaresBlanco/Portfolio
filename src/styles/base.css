@@ -1,0 +1,103 @@
+/* ============================================================
+   BASE · variables de diseño, temas, reset y elementos base
+   ============================================================ */
+
+:root {
+  --bg:        #191d1f;
+  --bg-soft:   #212629;
+  --surface:   #272c2f;
+  --line:      rgba(233,240,240,0.13);
+  --line-soft: rgba(233,240,240,0.07);
+  --text:      #eeede8;
+  --text-dim:  #adaaa0;
+  --text-faint:#75726a;
+  --accent:    #c9b48c;
+  --accent-soft: rgba(201,180,140,0.15);
+
+  --nav-bg: linear-gradient(to bottom, rgba(25,29,31,0.86), rgba(25,29,31,0));
+  --nav-solid: rgba(25,29,31,0.82);
+  --vignette: radial-gradient(ellipse at center, transparent 64%, rgba(0,0,0,0.26) 100%);
+  --hero-glow: rgba(205,218,218,0.045);
+  --grain-opacity: 0.04;
+
+  --font-body:  'Inter', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+
+  --maxw: 1200px;
+  --pad: clamp(1.4rem, 5vw, 5.5rem);
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ---------- MODO CLARO (papel fotográfico cálido) ---------- */
+:root[data-theme="light"] {
+  --bg:        #f4f3ef;
+  --bg-soft:   #eae8e2;
+  --surface:   #fbfaf6;
+  --line:      rgba(24,21,16,0.13);
+  --line-soft: rgba(24,21,16,0.07);
+  --text:      #17150f;
+  --text-dim:  #55514a;
+  --text-faint:#8a857b;
+  --accent:    #9c7a35;
+  --accent-soft: rgba(156,122,53,0.14);
+
+  --nav-bg: linear-gradient(to bottom, rgba(244,243,239,0.9), rgba(244,243,239,0));
+  --nav-solid: rgba(244,243,239,0.86);
+  --vignette: radial-gradient(ellipse at center, transparent 64%, rgba(40,34,24,0.10) 100%);
+  --hero-glow: rgba(150,125,80,0.06);
+  --grain-opacity: 0.035;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-weight: 300;
+  line-height: 1.65;
+  letter-spacing: 0.005em;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  transition: background-color 0.5s var(--ease), color 0.5s var(--ease);
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+button { font-family: inherit; }
+
+::selection { background: var(--accent); color: var(--bg); }
+
+/* Transición suave de tema: mientras se cambia, todos los elementos
+   animan sus colores. La clase se quita al terminar (0.6s). */
+html.theme-anim,
+html.theme-anim *,
+html.theme-anim *::before,
+html.theme-anim *::after {
+  transition: background-color 0.5s var(--ease), color 0.5s var(--ease),
+    border-color 0.5s var(--ease), fill 0.5s var(--ease),
+    box-shadow 0.5s var(--ease), opacity 0.5s var(--ease) !important;
+}
+
+/* Scrollbar refinada (WebKit) */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--line); border: 3px solid var(--bg); border-radius: 999px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-faint); }
+
+/* Etiqueta editorial reutilizable (eyebrow con línea) */
+.eyebrow,
+.hero__eyebrow,
+.contact__eyebrow {
+  display: inline-flex; align-items: center; gap: 0.9rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.32em;
+  font-size: 0.72rem;
+  font-weight: 400;
+}
+.hero__eyebrow::before,
+.contact__eyebrow::before {
+  content: ""; width: 34px; height: 1px; background: var(--accent); opacity: 0.7;
+}

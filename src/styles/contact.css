@@ -1,0 +1,22 @@
+/* ============================================================
+   CONTACTO · llamado final, botones sociales y footer
+   ============================================================ */
+
+.contact { text-align: center; background: radial-gradient(ellipse at 50% 120%, var(--accent-soft), transparent 62%), var(--bg); }
+.contact__inner { max-width: 720px; margin: 0 auto; padding: 0 var(--pad); }
+.contact__eyebrow { margin-bottom: 1.6rem; justify-content: center; }
+.contact__title { font-family: var(--font-serif); font-weight: 500; font-size: clamp(2.6rem, 8vw, 5.4rem); line-height: 1; letter-spacing: -0.02em; margin-bottom: 2rem; }
+.contact__email { font-family: var(--font-serif); font-style: italic; font-size: clamp(1.3rem, 3vw, 2rem); color: var(--text); border-bottom: 1px solid var(--line); padding-bottom: 0.25rem; transition: border-color 0.3s var(--ease); }
+.contact__email:hover { border-color: var(--accent); }
+.contact__socials { display: flex; justify-content: center; gap: 1rem; margin-top: 3rem; }
+.social-btn {
+  display: flex; align-items: center; justify-content: center;
+  width: 54px; height: 54px; border-radius: 50%;
+  border: 1px solid var(--line); color: var(--text-dim);
+  transition: border-color 0.35s var(--ease), color 0.35s var(--ease), background-color 0.35s var(--ease), transform 0.35s var(--ease);
+}
+.social-btn:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); transform: translateY(-3px); }
+.social-btn svg { width: 21px; height: 21px; }
+
+/* ---------- Footer ---------- */
+.footer { max-width: var(--maxw); margin: 0 auto; padding: 2.4rem var(--pad); border-top: 1px solid var(--line); display: flex; justify-content: center; text-align: center; color: var(--text-faint); font-size: 0.74rem; letter-spacing: 0.1em; text-transform: uppercase; flex-wrap: wrap; gap: 0.5rem; }

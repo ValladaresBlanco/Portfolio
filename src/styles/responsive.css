@@ -1,0 +1,45 @@
+/* ============================================================
+   RESPONSIVE · breakpoints (tablet, celular) y accesibilidad
+   ============================================================ */
+
+/* Tablet / navegación móvil */
+@media (max-width: 860px) {
+  .nav__links { display: none; }
+  .hamburger { display: flex; }
+  .about__grid, .project, .cv__grid { grid-template-columns: 1fr; }
+  .about__photo { max-width: 340px; }
+  .project__media { order: -1; }
+  .project__media, .project__body { padding: 0; }
+  .footer { justify-content: center; text-align: center; }
+}
+
+/* Tablet vertical */
+@media (max-width: 760px) {
+  .modal__content { grid-template-columns: 1fr; }
+}
+@media (max-width: 680px) {
+  .about__photo { max-width: 100%; }
+  .project__media .photo-frame { aspect-ratio: 16 / 9; }
+  .section-head::after { display: none; }
+  .about__stats { grid-template-columns: repeat(2, 1fr); }
+  .about__panels { grid-template-columns: 1fr; }
+}
+
+/* Celular */
+@media (max-width: 560px) {
+  :root { --pad: 1.35rem; }
+  .nav { padding: 0.9rem var(--pad); }
+  .nav__controls { gap: 0.5rem; }
+  .hero { padding: 7.5rem var(--pad) 3.5rem; }
+  .hero__actions { flex-direction: column; align-items: stretch; }
+  .hero__actions .btn { text-align: center; }
+  .section-head { margin-bottom: 2.6rem; }
+  .contact__socials { flex-wrap: wrap; gap: 1.2rem 1.8rem; }
+  .cv__download { padding: 1.6rem; }
+}
+
+/* Respeta a quien prefiere menos movimiento */
+@media (prefers-reduced-motion: reduce) {
+  .grain { animation: none; }
+  html { scroll-behavior: auto; }
+}

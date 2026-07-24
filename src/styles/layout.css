@@ -1,0 +1,27 @@
+/* ============================================================
+   LAYOUT · encabezado de sección, sección base y páginas
+   ============================================================ */
+
+.section-head {
+  max-width: var(--maxw); margin: 0 auto 4rem; padding: 0 var(--pad);
+  display: flex; align-items: center; gap: 1.4rem;
+}
+.section-head__num {
+  font-family: var(--font-serif); color: var(--accent); font-size: 0.95rem;
+  letter-spacing: 0.1em; font-style: italic;
+}
+.section-head__title { font-family: var(--font-serif); font-weight: 500; font-size: clamp(2.1rem, 5vw, 3.6rem); line-height: 1; letter-spacing: -0.015em; }
+.section-head::after { content: ""; flex: 1; height: 1px; background: var(--line); margin-left: 0.6rem; }
+
+section { padding: clamp(4.5rem, 10vw, 9rem) 0; }
+
+/* ---------- Páginas ---------- */
+.page { min-height: 100vh; }
+.page:not(.page--hero) { padding-top: 4rem; }
+
+/* Contacto: centrado y ocupando toda la altura (sin banda rara) */
+.page--contact { display: flex; flex-direction: column; padding-top: 0; }
+.page--contact .contact {
+  flex: 1; display: flex; align-items: center; justify-content: center;
+  width: 100%;
+}
