@@ -64,7 +64,19 @@ export default function Projects() {
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
             >
-              <div className="project__media">
+              <div
+                className="project__media"
+                onClick={() => setSelected(p)}
+                role="button"
+                tabIndex={0}
+                aria-label={`${t(ui.projects.viewDetails)}: ${t(p.title)}`}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" || e.key === " ") {
+                    e.preventDefault();
+                    setSelected(p);
+                  }
+                }}
+              >
                 {p.image ? (
                   <div className="photo-frame">
                     <img src={p.image} alt={t(p.title)} />
