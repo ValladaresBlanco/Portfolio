@@ -90,6 +90,10 @@ export interface Certification {
   issuer: string;
   year: string;
   url?: string;
+  date?: Localized; // fecha completa de emisión (ej. "Ago 2026")
+  image?: string; // insignia oficial, en public/
+  desc?: Localized;
+  skills?: string[];
 }
 
 export interface About {

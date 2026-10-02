@@ -38,11 +38,11 @@ export const about = {
   paragraphs: {
     es: [
       "Soy ingeniero en computación y desarrollador de software con alrededor de un año de experiencia profesional. Me apasiona desarrollar software y testearlo, disfruto convertir ideas en aplicaciones que funcionen bien.",
-      "He desarrollado desde servicios de facturación electrónica para empresas de Costa Rica hasta plataformas multiempresa seguras y escalables. Mi base en calidad y pruebas de software me ayuda a que todo lo que construyo sea confiable y esté bien probado. Actualmente estoy por terminar mi carrera de Ingeniería en Computación en el TEC (octubre 2026).",
+      "He desarrollado desde servicios de facturación electrónica para empresas de Costa Rica hasta plataformas multiempresa seguras y escalables. Mi base en calidad y pruebas de software me ayuda a que todo lo que construyo sea confiable y esté bien probado. Soy graduado en Ingeniería en Computación del TEC.",
     ],
     en: [
       "I'm a computer engineer and software developer with about a year of professional experience. I'm passionate about developing software and enjoy turning ideas into applications that work well.",
-      "I've built everything from electronic-invoicing services for Costa Rica companies to secure, scalable multi-company platforms. My background in software quality and testing helps me make sure everything I build is reliable and well tested. I'm currently finishing my Computer Engineering degree at TEC (October 2026).",
+      "I've built everything from electronic-invoicing services for Costa Rica companies to secure, scalable multi-company platforms. My background in software quality and testing helps me make sure everything I build is reliable and well tested. I hold a Computer Engineering degree from TEC.",
     ],
   },
 
@@ -261,12 +261,12 @@ export const projects: Project[] = [
       en: "Web-based laboratory management system for educational institutions: bookings, equipment inventory, damage reports and role-based access control.",
     },
     overview: {
-      es: "Sistema web para gestionar laboratorios: reservar espacios, administrar equipos, reportar daños y generar reportes en PDF, con acceso por roles (Super Admin, Administrador, Profesor y Estudiante). Desarrollado para el curso de Administración de Proyectos del TEC.",
-      en: "A web system to manage laboratories: book spaces, manage equipment, report damages and generate PDF reports, with role-based access (Super Admin, Administrator, Professor and Student). Built for the Project Management course at TEC.",
+      es: "Sistema web para gestionar laboratorios: reservar espacios, administrar equipos, reportar daños y generar reportes en PDF, con acceso por roles (Super Admin, Administrador, Profesor y Usuario). Desarrollado para el curso de Administración de Proyectos del TEC.",
+      en: "A web system to manage laboratories: book spaces, manage equipment, report damages and generate PDF reports, with role-based access (Super Admin, Administrator, Professor and User). Built for the Project Management course at TEC.",
     },
     features: {
       es: [
-        "Control de acceso por roles: Super Admin, Administrador, Profesor y Estudiante",
+        "Control de acceso por roles: Super Admin, Administrador, Profesor y Usuario",
         "Reserva de laboratorios en tiempo real, con detección de conflictos y renovación",
         "Inventario y gestión de equipos, con reportes de daños y flujo de restauración",
         "Reportes de uso y estadísticas con generación de PDF",
@@ -274,7 +274,7 @@ export const projects: Project[] = [
         "Seguridad: hash de contraseñas y prevención de inyección SQL",
       ],
       en: [
-        "Role-based access control: Super Admin, Administrator, Professor and Student",
+        "Role-based access control: Super Admin, Administrator, Professor and User",
         "Real-time lab booking with conflict detection and renewal",
         "Equipment inventory management with damage reports and restoration workflow",
         "Usage reports and statistics with PDF generation",
@@ -426,8 +426,8 @@ export const projects: Project[] = [
       en: "Angular 17 flight-booking web app with real airline logic and 68 tests (Jasmine/Karma). I built it as the base for the QA course.",
     },
     overview: {
-      es: "Web de reservas de vuelos con estética editorial (modo claro/oscuro), construida en Angular 17 y TypeScript. Desde el lado del cliente: buscas vuelos, eliges a tus viajeros guardados, ves el desglose de precio con impuestos y descuentos, confirmas y tu viaje queda agendado en 'My trips'. La desarrollé como el proyecto base del curso de Aseguramiento de la Calidad del Software: a partir de esta aplicación, los estudiantes debían escribir sus propias pruebas QA. Lo interesante técnicamente es la capa de servicios que modela lógica real de aerolínea y el diseño contra interfaces, que hace el código fácil de testear.",
-      en: "A flight-booking web app with an editorial look (light/dark), built with Angular 17 and TypeScript. From the traveler's side: you search flights, pick your saved travelers, see the price breakdown with taxes and discounts, confirm and your trip is scheduled in 'My trips'. I built it as the base project for the Software Quality Assurance course: students had to write their own QA tests against this application. The interesting part is the services layer that models real airline logic and the design against interfaces, which makes the code easy to test.",
+      es: "Web de reservas de vuelos con estética editorial (modo claro/oscuro), construida en Angular 17 y TypeScript. Desde el lado del cliente: buscas vuelos, eliges a tus viajeros guardados, ves el desglose de precio con impuestos y descuentos, confirmas y tu viaje queda agendado en 'My trips'. La desarrollé como el proyecto base del curso de Aseguramiento de la Calidad del Software: a partir de esta aplicación, los participantes del curso debían escribir sus propias pruebas QA. Lo interesante técnicamente es la capa de servicios que modela lógica real de aerolínea y el diseño contra interfaces, que hace el código fácil de testear.",
+      en: "A flight-booking web app with an editorial look (light/dark), built with Angular 17 and TypeScript. From the traveler's side: you search flights, pick your saved travelers, see the price breakdown with taxes and discounts, confirm and your trip is scheduled in 'My trips'. I built it as the base project for the Software Quality Assurance course: participants had to write their own QA tests against this application. The interesting part is the services layer that models real airline logic and the design against interfaces, which makes the code easy to test.",
     },
     features: {
       es: [
@@ -544,8 +544,8 @@ export const timeline: TimelineItem[] = [
     role: { es: "Bachillerato en Ing. en Computación", en: "B.Sc. Computer Engineering" },
     place: "Instituto Tecnológico de Costa Rica (TEC)",
     desc: {
-      es: "Graduación en octubre 2026; práctica profesional y cursos completados.",
-      en: "Graduating October 2026; professional practice and coursework completed.",
+      es: "Graduado como Ingeniero en Computación en octubre 2026.",
+      en: "Graduated as a Computer Engineer in October 2026.",
     },
   },
 ];
@@ -556,7 +556,19 @@ export const timeline: TimelineItem[] = [
    { title: "AWS Certified Cloud Practitioner", issuer: "Amazon Web Services", year: "2026", url: "https://..." }
    ============================================================ */
 export const certifications: Certification[] = [
-  // Aún sin certificaciones. Agrega objetos aquí cuando las tengas.
+  {
+    title: "Data Analytics Essentials",
+    issuer: "Cisco Networking Academy",
+    year: "2026",
+    date: { es: "Agosto 2026", en: "August 2026" },
+    image: "/cert-cisco-data-analytics.png",
+    url: "https://www.credly.com/badges/d52b5d90-72a2-4f0e-b5c9-c3521150b678",
+    desc: {
+      es: "Proceso de análisis de datos de principio a fin: obtención, transformación y análisis de datos con técnicas estadísticas y de preparación, y visualización de resultados.",
+      en: "The end-to-end data analytics process: acquiring, transforming and analyzing data with statistical and data-preparation techniques, and visualizing the results.",
+    },
+    skills: ["Excel", "SQL", "Tableau", "Data Analysis", "Data Visualization"],
+  },
 ];
 
 /* Interfaz (textos fijos del sitio) */
@@ -587,12 +599,12 @@ export const ui = {
     filters: {
       all: { es: "Todos", en: "All" },
       professional: { es: "Profesionales", en: "Professional" },
-      university: { es: "Universitarios", en: "University" },
+      university: { es: "Académicos", en: "Academic" },
       personal: { es: "Personales", en: "Personal" },
     },
     category: {
       professional: { es: "Profesional", en: "Professional" },
-      university: { es: "Universitario", en: "University" },
+      university: { es: "Académico", en: "Academic" },
       personal: { es: "Personal", en: "Personal" },
     },
     viewDetails: { es: "Ver detalles", en: "View details" },
@@ -609,6 +621,8 @@ export const ui = {
   certifications: {
     empty: { es: "Próximamente.", en: "Coming soon." },
     view: { es: "Ver credencial", en: "View credential" },
+    verified: { es: "Verificada en Credly", en: "Verified on Credly" },
+    issued: { es: "Emitida", en: "Issued" },
   },
   contact: {
     eyebrow: { es: "¿Trabajamos juntos?", en: "Let's work together?" },
