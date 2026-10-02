@@ -3,6 +3,12 @@
    ============================================================ */
 
 .cv__grid { max-width: var(--maxw); margin: 0 auto; padding: 0 var(--pad); display: grid; grid-template-columns: 1.4fr 0.6fr; gap: clamp(2rem, 5vw, 4.5rem); align-items: start; }
+.cv__groups { display: flex; flex-direction: column; gap: clamp(3rem, 6vw, 4.5rem); }
+.cv__group-title {
+  display: flex; align-items: center; gap: 1.2rem; margin-bottom: 2rem;
+  font-size: 0.78rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent);
+}
+.cv__group-title::after { content: ""; flex: 1; height: 1px; background: var(--line); }
 .timeline { position: relative; padding-left: 1.8rem; }
 .timeline::before { content: ""; position: absolute; left: 0; top: 0.4rem; bottom: 0.4rem; width: 1px; background: var(--line); }
 .timeline__item { position: relative; padding-bottom: 2.8rem; }

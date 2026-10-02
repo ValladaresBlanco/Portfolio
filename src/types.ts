@@ -69,6 +69,7 @@ export interface ProjectTesting {
 }
 
 export interface TimelineItem {
+  type: "experience" | "education";
   date: Localized;
   role: Localized;
   place: string;

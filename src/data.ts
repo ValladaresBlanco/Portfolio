@@ -513,6 +513,7 @@ export const projects: Project[] = [
 
 export const timeline: TimelineItem[] = [
   {
+    type: "experience",
     date: { es: "Feb 2026 a Jun 2026", en: "Feb 2026 to Jun 2026" },
     role: { es: "Desarrollador de Software", en: "Software Developer" },
     place: "CyberPro Costa Rica",
@@ -522,6 +523,7 @@ export const timeline: TimelineItem[] = [
     },
   },
   {
+    type: "experience",
     date: { es: "Ago 2025 a Jun 2026", en: "Aug 2025 to Jun 2026" },
     role: { es: "Asistente de QA & Testing", en: "QA & Testing Assistant" },
     place: "TEC Costa Rica",
@@ -531,6 +533,7 @@ export const timeline: TimelineItem[] = [
     },
   },
   {
+    type: "experience",
     date: { es: "Ago 2025 a Nov 2025", en: "Aug 2025 to Nov 2025" },
     role: { es: "Desarrollador de Software", en: "Software Developer" },
     place: "TEC Costa Rica",
@@ -540,6 +543,7 @@ export const timeline: TimelineItem[] = [
     },
   },
   {
+    type: "education",
     date: { es: "2020 a Oct 2026", en: "2020 to Oct 2026" },
     role: { es: "Bachillerato en Ing. en Computación", en: "B.Sc. Computer Engineering" },
     place: "Instituto Tecnológico de Costa Rica (TEC)",
@@ -617,6 +621,8 @@ export const ui = {
   resume: {
     prompt: { es: "¿Quieres el documento completo?", en: "Want the full document?" },
     download: { es: "Descargar CV (PDF)", en: "Download résumé (PDF)" },
+    experience: { es: "Experiencia", en: "Experience" },
+    education: { es: "Educación", en: "Education" },
   },
   certifications: {
     empty: { es: "Próximamente.", en: "Coming soon." },
