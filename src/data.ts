@@ -561,6 +561,19 @@ export const timeline: TimelineItem[] = [
    ============================================================ */
 export const certifications: Certification[] = [
   {
+    title: "Endpoint Security",
+    issuer: "Cisco Networking Academy",
+    year: "2026",
+    date: { es: "Octubre 2026", en: "October 2026" },
+    image: "/cert-cisco-endpoint-security.png",
+    url: "https://www.credly.com/badges/d1800244-6288-449d-b815-6db8ca0ddb39",
+    desc: {
+      es: "Fundamentos de seguridad de redes, sistemas operativos y protección de endpoints: amenazas comunes, defensa de dispositivos y buenas prácticas de seguridad.",
+      en: "Network security fundamentals, operating systems and endpoint protection: common threats, device defense and security best practices.",
+    },
+    skills: ["Network Security", "Endpoint Security", "Operating Systems", "Cybersecurity"],
+  },
+  {
     title: "Data Analytics Essentials",
     issuer: "Cisco Networking Academy",
     year: "2026",
