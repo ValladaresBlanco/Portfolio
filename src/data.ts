@@ -515,17 +515,17 @@ export const timeline: TimelineItem[] = [
   {
     type: "experience",
     date: { es: "Feb 2026 a Jun 2026", en: "Feb 2026 to Jun 2026" },
-    role: { es: "Desarrollador de Software", en: "Software Developer" },
+    role: { es: "Desarrollador de Software (Práctica Profesional)", en: "Software Developer (Professional Internship)" },
     place: "CyberPro Costa Rica",
     desc: {
-      es: "Endpoints REST y lógica de backend en una suite ERP/POS: facturación electrónica (Hacienda v4.4), backend multitenant, consultas SQL con Prisma y funcionalidades de la app Android.",
-      en: "REST endpoints and backend logic across an ERP/POS suite: e-invoicing (Hacienda v4.4), multitenant backend, SQL with Prisma and Android app features.",
+      es: "Facturación electrónica (Hacienda v4.4) sobre un ERP open-source en Python; servicios REST multitenant en Node.js, Express y Prisma para rastreo GPS y RRHH; funcionalidades Android y pruebas de API en Postman.",
+      en: "Electronic invoicing (Hacienda v4.4) on an open-source ERP in Python; multitenant REST services in Node.js, Express and Prisma for GPS tracking and HR; Android features and API testing in Postman.",
     },
   },
   {
     type: "experience",
     date: { es: "Ago 2025 a Jun 2026", en: "Aug 2025 to Jun 2026" },
-    role: { es: "Asistente de QA & Testing", en: "QA & Testing Assistant" },
+    role: { es: "Asistente del curso de Calidad y Pruebas de Software (medio tiempo)", en: "Teaching Assistant, Software Quality & Testing (part-time)" },
     place: "TEC Costa Rica",
     desc: {
       es: "Apoyo al curso de Calidad y Pruebas de Software del TEC: revisión de entregables, diseño de pruebas y automatización con Jest, Cypress, Playwright y JMeter.",
@@ -535,7 +535,7 @@ export const timeline: TimelineItem[] = [
   {
     type: "experience",
     date: { es: "Ago 2025 a Nov 2025", en: "Aug 2025 to Nov 2025" },
-    role: { es: "Desarrollador de Software", en: "Software Developer" },
+    role: { es: "Desarrollador Estudiantil", en: "Student Developer" },
     place: "TEC Costa Rica",
     desc: {
       es: "Sitio web turístico con Next.js 15 y React 19, APIs serverless, integración con Firebase y estado global con Redux Toolkit.",
@@ -544,7 +544,7 @@ export const timeline: TimelineItem[] = [
   },
   {
     type: "education",
-    date: { es: "2020 a Oct 2026", en: "2020 to Oct 2026" },
+    date: { es: "Graduado Oct 2026", en: "Graduated Oct 2026" },
     role: { es: "Bachillerato en Ing. en Computación", en: "B.Sc. Computer Engineering" },
     place: "Instituto Tecnológico de Costa Rica (TEC)",
     desc: {
