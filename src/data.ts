@@ -141,7 +141,7 @@ export const projects: Project[] = [
     tags: ["Python", "Flask", "Firebase", "Pygame", "WebSockets", "JavaScript"],
     image: "/snake-title.png",
     images: ["/snake-title.png", "/snake-power.png", "/snake-start.png", "/snake-welcome.png", "/snake-play.png", "/snake-gameover.png"],
-    links: [{ label: { es: "Código", en: "Code" }, url: "https://github.com/Noealto90/Juego-Distribuido" }],
+    links: [{ label: { es: "Código", en: "Code" }, url: "https://github.com/ValladaresBlanco/Juego-Distribuido" }],
   },
   {
     id: "resource-monitor",
@@ -178,7 +178,7 @@ export const projects: Project[] = [
     tags: ["Python", "Firebase", "Firestore", "psutil", "python-dotenv"],
     image: "/resource-monitor.png",
     images: ["/resource-monitor.png"],
-    links: [{ label: { es: "Código", en: "Code" }, url: "https://github.com/Noealto90/Proyecto-Sistemas-Operativos" }],
+    links: [{ label: { es: "Código", en: "Code" }, url: "https://github.com/ValladaresBlanco/Proyecto-Sistemas-Operativos" }],
   },
   {
     id: "the-last-king",
@@ -285,7 +285,7 @@ export const projects: Project[] = [
     tags: ["PHP", "PostgreSQL", "JavaScript", "HTML5", "CSS3", "PHPMailer"],
     image: "/etai-estudiante.png",
     images: ["/etai-estudiante.png", "/etai-reserva.png", "/etai-admin.png", "/etai-profesor.png"],
-    links: [{ label: { es: "Código", en: "Code" }, url: "https://github.com/Noealto90/ProyectoETAI" }],
+    links: [{ label: { es: "Código", en: "Code" }, url: "https://github.com/ValladaresBlanco/etai-lab-reservations" }],
   },
   {
     id: "gps-tracking",
